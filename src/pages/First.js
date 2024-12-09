@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addProduct } from '../Redux/ProductSlice'
 import { Crd } from '../components/Crd'
+import Carousel from '../components/Carosel'
 import { Demo } from '../components/Demo'
 import { InforSection } from '../components/InforSection'
+import Loading from '../components/Loading'
 
 export const First = () => {
   const [data, setData] = useState([])
@@ -32,7 +34,7 @@ export const First = () => {
 
   
 
-  if (loading) return <h1>Loading..</h1>
+  if (loading) return <Loading></Loading>
   if (error) return <h1>Error : {error.message}</h1>
   return (
    <div>

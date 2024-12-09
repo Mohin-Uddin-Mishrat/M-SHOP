@@ -21,7 +21,7 @@ export const Crd = ({product}) => {
 
   }
   return (
-    <button onClick={handelDetails}>
+    <div onClick={handelDetails}>
       <div className='relative p-5 rounded-lg shadow-lg m-1  hover:scale-105 transition-all duration-300 ease-in'>
          <img className=' object-contain w-full h-32' src={product.image}></img>
          <h1>{product.title.slice(0, 10)}....</h1>
@@ -38,6 +38,6 @@ export const Crd = ({product}) => {
             <button onClick={handleCart} className=' hidden group-hover:block '>Add to Cart</button>
          </div>
       </div>
-    </button>
+    </div>
   )
 }

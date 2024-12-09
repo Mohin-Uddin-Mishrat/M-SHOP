@@ -4,15 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import {Navbar} from './components/Navbar'
 import { Provider } from 'react-redux';
-import { Navbar } from './components/Navbar';
+import Store from './Redux/Store';
 import Footer from './components/Footer';
-import store from './Redux/Store'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Provider store={store}>
+    <Provider store={Store}>
       <Navbar></Navbar>
       <App />
       <Footer></Footer>

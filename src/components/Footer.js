@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-4">About Us</h3>
           <p className="text-sm text-gray-400">
-            Welcome to MY-SHOP, your one-stop destination for quality products.
+            Welcome to M-SHOP, your one-stop destination for quality products.
             Our mission is to provide the best shopping experience online.
           </p>
         </div>
@@ -27,9 +27,9 @@ const Footer = () => {
         {/* Contact Information */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm text-gray-400">Email: mmishrat90@gmail.com</p>
+          <p className="text-sm text-gray-400">Email: support@mshop.com</p>
           <p className="text-sm text-gray-400">Phone: +1-234-567-890</p>
-          <p className="text-sm text-gray-400">Address: 123 MY-SHOP Street, Cityville</p>
+          <p className="text-sm text-gray-400">Address: 123 M-SHOP Street, Cityville</p>
         </div>
 
         {/* Social Media Links */}
